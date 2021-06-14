@@ -1,0 +1,74 @@
+/*Resolve Sans Font Family*/
+
+@font-face {
+font-family: 'Resolve Sans';
+src: url('../font/resolve-sans/Fenotype-ResolveSansBoldCn.otf') format('opentype');
+font-weight: bold;
+font-style: normal;
+}
+
+/*Compagnon Font Family*/
+
+@font-face {
+font-family: 'Compagnon';
+src: url('../font/compagnon/Compagnon-Medium.otf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+/*DM Mono Font Family*/
+
+@font-face {
+font-family: 'DM Mono';
+src: url('../font/DM-mono/DMMono-Light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+/*DM Sans Font Family*/
+
+@font-face {
+font-family: 'DM Sans';
+src: url('../font/DM-sans/DMSans-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'DM Sans';
+src: url('../font/DM-sans/DMSans-Bold.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+
+/*Clear Sans Font Family*/
+
+@font-face {
+font-family: 'Clear Sans';
+src: url('../font/clear-sans/ClearSans-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Clear Sans';
+src: url('../font/clear-sans/ClearSans-Bold.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+
+/*Jura Font Family*/
+
+@font-face {
+font-family: 'Jura';
+src: url('../font/jura/Jura-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Jura';
+src: url('../font/jura/Jura-Bold.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
