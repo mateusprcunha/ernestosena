@@ -39,8 +39,9 @@
             <section>
                 <h2 class="section-title">Contato</h2>
                 <address>
-                    <p>ernestosena@gmail.com</p>
-                    <p><i class="fab fa-whatsapp"></i> (21) 96581 62622</p>
+                    <p><a href="#">ernestosena@gmail.com</a></p>
+                    <p><a href="#"><i class="fab fa-whatsapp"></i> (21) 96581 62622</a></p>
+                    <p><a href="#"><i class="fab fa-linkedin"></i> /ernestosena</a></p>
                 </address>
                 <a href="#">
                     <img src="src/IMDb.png" width="45">
@@ -56,23 +57,51 @@
 
     <main>
         <nav class="mobile-menu">
-            <img class="logo" src="src/logo.svg">
-            <div class="menu-icon">
+            <a href="index.html">
+                <img class="logo" src="src/logo.svg">
+            </a>
+            <div onclick="showMenu()" class="menu-icon">
                 <img class="menu-icon-svg" src="src/menu.svg">
                 <span>Menu</span>
             </div>
         </nav>
 
         <nav class="main-menu">
-            <ul>
-                <li><a href="filme.html">Filmes</a></li>
-                <li><a href="filme.html">Séries</a></li>
-                <li><a href="musica.html">Música</a></li>
-                <li><a href="filme.html">Publicidade</a></li>
-                <li><a href="filme.html">Exposições</a></li>
-                <li><a href="clientes.html">Clientes</a></li>
-                <li><a href="servico.html">Serviço</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <div class="dropdown">
+                        <a type="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Filmes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                            <li><a class="dropdown-item" href="filme.html">Longas</a></li>
+                            <li><a class="dropdown-item" href="filme.html">Curtas</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-item"><a href="filme.html">Séries</a></li>
+                <li class="menu-item"><a href="musica.html">Música</a></li>
+                <li class="menu-item"><a href="filme.html">Publicidade</a></li>
+                <li class="menu-item"><a href="filme.html">Exposições</a></li>
+                <li class="menu-item"><a href="clientes.html">Clientes</a></li>
+                <li class="menu-item">
+                    <div class="dropdown">
+                        <a type="button" id="dropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                            Serviços
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                            <li><a class="dropdown-item" href="servico.html">Captação</a></li>
+                            <li><a class="dropdown-item" href="servico.html">Som direto</a></li>
+                            <li><a class="dropdown-item" href="servico.html">Edição de som</a></li>
+                            <li><a class="dropdown-item" href="servico.html">Desenho de som</a></li>
+                            <li><a class="dropdown-item" href="servico.html">Mixagem</a></li>
+                            <li><a class="dropdown-item" href="servico.html">Masterização</a></li>
+                            <li><a class="dropdown-item" href="servico.html">Sonoplastia</a></li>
+                            <li><a class="dropdown-item" href="servico.html">Edição de efeitos</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-item"><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
 
@@ -89,7 +118,7 @@
                 <figcaption>
                     <h1>Bronze</h1>
                     <p>Doc, 90min (2013)</p>
-                    <ul>
+                    <ul class="plus-list">
                         <li>Edição de som</li>
                         <li>Mixagem</li>
                     </ul>
@@ -102,7 +131,7 @@
                 <figcaption>
                     <h2 class="section-title">Ficha técnica</h2>
                     <div class="section-content">
-                        <div class="container-fluid">
+                        <div class="container">
                             <div class="row">
                                 <div class="col col-6 col-md-6 col-lg-5">
                                     <dl>
@@ -135,6 +164,62 @@
         </section>
 
     </main>
+    
+    <aside id="mobile-nav">
+        <nav class="mobile-menu">
+            <a href="index.html">
+                <img class="logo" src="src/logo.svg">
+            </a>
+            <div onclick="hideMenu()" class="close-icon">
+                <img class="close-icon-svg" src="src/close.svg">
+            </div>
+        </nav>
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-list-item"><a class="collapsable-item" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">Filmes</a></li>
+            <ul class="collapse" id="collapse1">
+                <li class="mobile-nav-list-subitem"><a href="filme.html">Longas</a></li>
+                <li class="mobile-nav-list-subitem"><a href="filme.html">Curtas</a></li>
+            </ul>
+            <li class="mobile-nav-list-item"><a href="filme.html">Séries</a></li>
+            <li class="mobile-nav-list-item"><a href="musica.html">Música</a></li>
+            <li class="mobile-nav-list-item"><a href="filme.html">Publicidade</a></li>
+            <li class="mobile-nav-list-item"><a href="filme.html">Exposições</a></li>
+            <li class="mobile-nav-list-item"><a class="collapsable-item" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">Serviços</a></li>
+            <ul class="collapse" id="collapse2">
+                <li class="mobile-nav-list-subitem"><a href="servico.html">Capitação</a></li>
+                <li class="mobile-nav-list-subitem"><a href="servico.html">Som direto</a></li>
+                <li class="mobile-nav-list-subitem"><a href="servico.html">Edição de som</a></li>
+                <li class="mobile-nav-list-subitem"><a href="servico.html">Desenho de som</a></li>
+                <li class="mobile-nav-list-subitem"><a href="servico.html">Mixagem</a></li>
+                <li class="mobile-nav-list-subitem"><a href="servico.html">Masterização</a></li>
+                <li class="mobile-nav-list-subitem"><a href="servico.html">Sonoplastia</a></li>
+                <li class="mobile-nav-list-subitem"><a href="servico.html">Edição de efeitos</a></li>
+            </ul>
+            <li class="mobile-nav-list-item"><a href="sobre.html">Sobre</a></li>
+        </ul>
+        <div class="mobile-contact">
+                <h2 class="section-title">Contato</h2>
+                <address>
+                    <p><a href="#">ernestosena@gmail.com</a></p>
+                    <p><a href="#"><i class="fab fa-whatsapp"></i> (21) 96581 62622</a></p>
+                    <p><a href="#"><i class="fab fa-linkedin"></i> /ernestosena</a></p>
+                </address>
+            </div>
+    </aside>
+    
+    <footer>
+        <div class="credits">
+            <p>Design: <span>Lucas Bevilaqua</span></p>
+            <p>Desenvolvimento: <span>Mateus Cunha</span></p>
+        </div>
+        <a href="#" onclick="scrollToTop()" class="top-icon">
+            <img class="top-icon-svg" src="src/top.svg">
+            <span>Topo</span>
+        </a>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body></html>
