@@ -640,7 +640,7 @@ main .mobile-menu {
 
     .dropdown-menu .dropdown-item {
         color: var(--content-color);
-        font-family: var(--body-text);
+        font-family: var(--body-font);
         font-size: 0.9rem;
         text-transform: none;
         margin: 0;
