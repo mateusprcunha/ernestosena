@@ -384,6 +384,10 @@ main .mobile-menu {
     margin-right: 0;
 }
 
+.project figcaption .col{
+    padding-left: 0;
+}
+
 .project .project-description {
     overflow: auto;
 }
@@ -407,6 +411,7 @@ main .mobile-menu {
     font-weight: 400;
     text-transform: uppercase;
     line-height: 0.8;
+    letter-spacing: 1.5px;
 }
 
 .project figcaption h1 {
@@ -643,7 +648,6 @@ main .mobile-menu {
         font-family: var(--body-font);
         font-size: 0.9rem;
         text-transform: none;
-        letter-spacing: 1px;
         margin: 0;
         padding: 15px 10px 5px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -735,10 +739,6 @@ main .mobile-menu {
 
     .expand-button .button-name:hover {
         text-decoration: underline;
-    }
-    
-    #mobile-nav {
-        display: none;
     }
 }
 
